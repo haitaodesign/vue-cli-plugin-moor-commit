@@ -7,7 +7,7 @@
   2. 统一团队的 Git WorkFlow，包括分支使用，tag，issue规范等
   3. 通过插件的形式，前端Vue项目一键集成git commit message 提交规范
 
-## Angular的git commit 的基本规范
+## 主流git commit 的基本规范
 
 ```js
 <type>(<scope>): <subject>
