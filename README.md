@@ -70,10 +70,44 @@ yarn add @commitlint/cli @commitlint/config-angular @commitlint/config-conventio
 * 新增scripts
 
 ```
-"scripts": {
-  "commit": "git-cz",
-  "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
-},
+  "scripts": {
+    "commit": "git-cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },
 ```
 
 * 新增husky
+
+```
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+```
+### 接入后Git commit操作流程
+
+* 第一步，创建一个feature分支或者bugfix分支
+
+`git chekout -b featrue_20190107_commitRules`
+
+* 第二步，将代码提交到本地Git仓库，并使用`yarn commit` 代替 `git commit -m 'commit ruls'`
+
+```
+git add .
+yarn commit
+```
+![](/screenshots/commitizen.png)
+
+选择合适的类型，并按照命令行交互的形式进行提交
+
+> 若不按照规范格式进行提交，由于husky的限制，会导致提交失败
+> 
+* 第三步，将代码同步到远程仓库
+
+```
+git push origin featrue_20190107_commitRules
+```
+* 第四步，自动生成changelog, 然后提交MR进行合并
+
+
