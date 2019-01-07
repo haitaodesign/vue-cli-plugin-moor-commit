@@ -110,4 +110,12 @@ git push origin featrue_20190107_commitRules
 ```
 * 第四步，自动生成changelog, 然后提交MR进行合并
 
+```
+yarn changelog
+```
 
+> 这里使用的是yarn，若没有按照请自行切换到npm 或者安装yarn
+
+```
+npm i yarn -g
+```
