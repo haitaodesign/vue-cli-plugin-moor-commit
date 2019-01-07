@@ -9,7 +9,7 @@
 
 ## Angular的git commit 的基本规范
 
-```
+```js
 <type>(<scope>): <subject>
 <BLANK LINE>
 <body>
@@ -34,7 +34,7 @@
 
 ### 格式要求
 
-```
+```js
 # type:类型
 # scope: 本次提交的作用范围，某个模块或者文件
 # 标题行9(subject)：50个字符以内，描述主要变更内容，尽量以动词开头（如：添加，修改，更新等）
@@ -65,13 +65,13 @@
 接入参考项目为[vue-cli-plugin-commit](https://github.com/haitaodesign/vue-cli-plugin-commit)，具体操作如下：
 * 第一步，安装所需要的依赖
 
-```
+```js
 yarn add @commitlint/cli @commitlint/config-angular @commitlint/config-conventional commitizen cz-conventional-changelog husky conventional-changelog-cli -D
 ```
 
 * 新增scripts
 
-```
+```js
   "scripts": {
     "commit": "git-cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
@@ -80,7 +80,7 @@ yarn add @commitlint/cli @commitlint/config-angular @commitlint/config-conventio
 
 * 新增husky
 
-```
+```js
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
@@ -95,7 +95,7 @@ yarn add @commitlint/cli @commitlint/config-angular @commitlint/config-conventio
 
 * 第二步，将代码提交到本地Git仓库，并使用`yarn commit` 代替 `git commit -m 'commit ruls'`
 
-```
+```js
 git add .
 yarn commit
 ```
@@ -107,17 +107,17 @@ yarn commit
 
 * 第三步，将代码同步到远程仓库
 
-```
+```js
 git push origin featrue_20190107_commitRules
 ```
 * 第四步，自动生成changelog, 然后提交MR进行合并
 
-```
+```js
 yarn changelog
 ```
 
 > 这里使用的是yarn，若没有按照请自行切换到npm 或者安装yarn
 
-```
+```js
 npm i yarn -g
 ```
