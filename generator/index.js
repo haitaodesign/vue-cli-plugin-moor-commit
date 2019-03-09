@@ -2,7 +2,7 @@
  * @Author: lihaitao 
  * @Date: 2019-02-25 17:35:17 
  * @Last Modified by: lihaitao
- * @Last Modified time: 2019-02-25 18:16:13
+ * @Last Modified time: 2019-03-09 15:29:08
  */
 module.exports = (api, option) => {
   // 模板渲染
@@ -26,6 +26,11 @@ module.exports = (api, option) => {
       husky: {
         "hooks": {
           "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+      },
+      config: {
+        "commitizen": {
+          "path": "cz-conventional-changelog"
         }
       }
     })
