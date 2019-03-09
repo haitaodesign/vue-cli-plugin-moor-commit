@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-moor-commit",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "git commit style guides",
   "main": "index.js",
   "scripts": {
