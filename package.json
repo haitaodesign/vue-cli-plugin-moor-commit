@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haitaodesign/vue-cli-plugin-commit.git"
+    "url": "git+https://github.com/haitaodesign/vue-cli-plugin-moor-commit.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/haitaodesign/vue-cli-plugin-commit/issues"
+    "url": "https://github.com/haitaodesign/vue-cli-plugin-moor-commit/issues"
   },
-  "homepage": "https://github.com/haitaodesign/vue-cli-plugin-commit#readme",
+  "homepage": "https://github.com/haitaodesign/vue-cli-plugin-moor-commit#readme",
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",
     "@commitlint/config-angular": "^7.1.2",
