@@ -14,4 +14,4 @@ vue add moor-commit
 
 ## 规范指南
 
-[私有云部 git commit 规范指南](http://188.131.230.60:17100/%E5%9B%A2%E9%98%9F%E8%A7%84%E8%8C%83/gitcommit%E8%A7%84%E8%8C%83.html)
+[git commit 规范指南](https://github.com/haitaodesign/Vue-Cli3.0-Enterprise-Boilerplate/issues/13)
