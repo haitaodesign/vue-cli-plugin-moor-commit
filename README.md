@@ -2,7 +2,7 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-> vue-cli 的 git commit 规范插件
+> vue-cli 的 git commit 规范插件
 使用commitlint + commitizen + cz-conventional-changelog 实现 git commit 信息的提交、规范检查以及日志的生成
 
 ## 在已经创建的项目中安装
